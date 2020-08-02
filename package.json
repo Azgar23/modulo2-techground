@@ -1,0 +1,19 @@
+{
+  "name": "modulo2-techground",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000m\u0000o\u0000d\u0000u\u0000l\u0000o\u00002\u0000-\u0000t\u0000e\u0000c\u0000h\u0000g\u0000r\u0000o\u0000u\u0000n\u0000d\u0000\r\u0000 \u0000# modulo2-techground",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Azgar23/modulo2-techground.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Azgar23/modulo2-techground/issues"
+  },
+  "homepage": "https://github.com/Azgar23/modulo2-techground#readme"
+}
