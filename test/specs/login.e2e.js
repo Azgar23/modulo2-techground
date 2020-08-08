@@ -1,6 +1,6 @@
 const LoginPage = require('../pageobjects/login.page');
 const NavigationPage = require('../pageobjects/navigation.page');
-
+//Esto es una prueba
 describe('My Login application', () => {
     it('should login with valid credentials', () => {
         NavigationPage.open();
