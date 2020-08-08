@@ -10,6 +10,8 @@ class DashboardPage extends Page {
     get noArticulesLabel () { return $('div=No articles are here... yet.') };
     get yourFeedTap(){ return $('.nav-link=Your Feed')};
     get globalFeedTap(){ return $('.nav-link=Global Feed')};
+//    get articleRows (){return $$('//article-List/article-preview')};
+    get articleRows (){return $('<article-List />').$$('<article-preview />')};
     /**
      * a method to encapsule automation code to interact with the page
      * e.g. to login using username and password
@@ -24,6 +26,10 @@ class DashboardPage extends Page {
 
     getGlobalFeedTap(){
         return this.globalFeedTap;
+    }
+
+    getArticulesList(){
+        return this.articleRows;
     }
     /**
      * overwrite specifc options to adapt it to page object

@@ -27,8 +27,11 @@ describe('My Login application', () => {
     it('should open the global tab', ()=>{
 
         DashboardPage.getGlobalFeedTap().click();
+        browser.pause(2000);
+        //console.log('Hola GetSize '+ DashboardPage.getArticulesList().getSize());
         expect(DashboardPage.getGlobalFeedTap()).toHaveAttribute('class', 'nav-link active');
         expect(DashboardPage.getGlobalFeedTap()).toHaveClass('active', {message:'No active Tap!'});
+        expect(DashboardPage.getArticulesList()).toBeElementsArrayOfSize({ eq: 10 });
     })
 
 });
