@@ -12,6 +12,7 @@ class DashboardPage extends Page {
     get globalFeedTap(){ return $('.nav-link=Global Feed')};
 //    get articleRows (){return $$('//article-List/article-preview')};
     get articleRows (){return $('<article-List />').$$('<article-preview />')};
+    get articleRowsReadMore (){return $('<article-List />').$$('<article-preview />')[1].$('span=Read more...')};
     /**
      * a method to encapsule automation code to interact with the page
      * e.g. to login using username and password
@@ -30,6 +31,9 @@ class DashboardPage extends Page {
 
     getArticulesList(){
         return this.articleRows;
+    }
+    getReadMoreAnchor(){
+        return this.articleRowsReadMore;
     }
     /**
      * overwrite specifc options to adapt it to page object
